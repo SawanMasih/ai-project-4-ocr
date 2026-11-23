@@ -1,2 +1,22 @@
-# ai-project-4-ocr
-Text recognition (OCR) project using Python, OpenCV and Tesseract. Pre-processes images (grayscale, blur, deskew, adaptive threshold), extracts text, and keeps only results with 80%+ confidence.
+# Text Recognition with OCR (AI Project 4)
+
+Reads text from an image using Tesseract OCR and OpenCV.
+
+## How it works
+1. Load image
+2. Pre-process: grayscale, Gaussian blur, deskew, adaptive threshold
+3. Recognise text with pytesseract
+4. Keep only words with confidence >= 80%
+5. Save annotated output image
+
+## Setup
+Install the Tesseract engine, then:
+pip install -r requirements.txt
+
+## Run
+python ocr_recognition.py test_image.png
+
+## Results
+Average confidence: 95.5% (PASS, minimum is 80%)
+
+![Output](output_annotated.png)
